@@ -3,10 +3,8 @@ void main() {
   // In modern programming languages such as C, Java etc.. there is generally two types of convertions; that is implicit type and explicit type.
   // let us see whether this holds true for dart as well.
 
-  int age =
-      36; // this is an integer variable assigned with an integer value let's see if this value can be converted to string or not
-  String ageString = age
-      .toString(); // since age integer we cannot just assign it to a String variable. so convert it we have use the toString method that will convert it to a string and then we can assign it to the string variable as string value.
+  int age = 36; // this is an integer variable assigned with an integer value let's see if this value can be converted to string or not
+  String ageString = age.toString(); // since age integer we cannot just assign it to a String variable. so convert it we have use the toString method that will convert it to a string and then we can assign it to the string variable as string value.
   print(
     "value: $ageString, data_type: ${ageString.runtimeType}",
   ); // this now prints a string value '36';
@@ -37,12 +35,17 @@ void main() {
   print("Value: $convertWord, data_type: ${convertWord.runtimeType}"); // this line will only return this as the result "Value: null, data_type: Null"
 
   // -- now lets see some convertions between int and double --
-  int x = 10;
-  double y = x.toDouble();
-  double z = 20;
-  int w = 40.6.round();
+  int x = 10; // in dart it is invalid to assign as integer type Variable to a Double type variable
+  double y = x.toDouble(); // to do so we must use the toDouble() function.
+  double z = 20; // but it is perfectly fine to assign a integer value/constant/literal to a double type variable.
+  int w = 40.6.round(); // in dart it is invalid to assign double value to integer variable.
+  // so we have to use the round function to round the values to integer.
+
+  // we can also use floor ceil round or truncate depending upon the type of need.
+  
   print(y);
   print(x);
   print(z);
   print(w);
+  print('value: $w, data_type: ${w.runtimeType}');
 }
