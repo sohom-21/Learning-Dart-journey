@@ -38,10 +38,10 @@ void main() {
   // remember that in most case if value3 is have an double or floating point value there would some error about integer variable getting an decimal value from the dart compiler it self.
   // so try to use / and % operators with double datatype variable.
   
-  // now let's also see some operator precidence. Which tells us how an expression is evaluted and which operation is performed first tull the end result.
+  // now let's also see some operator precedence. Which tells us how an expression is evaluted and which operation is performed first tull the end result.
   print(10 - 2 * 3);
   // the result is 4 which means the multiply operator is getting executed first and then the substraction operation.
   print((10 - 2) * 3);
   // now adding parenthesis to this expression change the way it is evaluated by the compiler.
-  // this is the way operator precidence can be displayed.
+  // this is the way operator precedence can be displayed.
 }
