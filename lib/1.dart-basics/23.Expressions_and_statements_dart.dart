@@ -6,7 +6,7 @@ void main() {
   // (10+3), (x +=10), [age > 16? 'adult' : 'child'] these have value, when assigned to a variable 
   //Otherhand statement do not hold a value.
   // print('next: ${value + 1}')
-  // int y  = x * 2;
+  // int y = x * 2;
   // print('hello');
   // have no more value further to assigned or modified.
-}
+} 
